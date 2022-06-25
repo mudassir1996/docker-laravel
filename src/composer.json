@@ -19,7 +19,6 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "3.0.0",
         "livewire/livewire": "^2.4",
-        
         "milon/barcode": "^8.0",
         "yajra/laravel-datatables": "^1.5"
     },
