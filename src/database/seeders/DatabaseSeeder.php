@@ -1,7 +1,8 @@
 <?php
 
-namespace Database\Seeders;
-
+use Database\Seeders\InvoiceStandardBodyHeader;
+use Database\Seeders\InvoiceStandardFooter;
+use Database\Seeders\InvoiceStandardHeader;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,6 +14,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $this->call([
+            InvoiceStandardHeader::class,
+            InvoiceStandardBodyHeader::class,
+            InvoiceStandardFooter::class,
+        ]);
     }
 }
